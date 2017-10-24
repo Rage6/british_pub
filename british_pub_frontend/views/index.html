@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="british_pub">
+  <head>
+    <meta charset="utf-8">
+    <title>The Hunting Horn</title>
+    <link href="style.css" type="text/css" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Chivo|Cinzel|Cormorant+Garamond|Fondamento|IM+Fell+English|Tangerine|UnifrakturMaguntia" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body ng-controller="mainController as ctrl">
+    <div id="mainTitle">
+      <a name="menu">
+        <nav id="topNav" ng-click="ctrl.openAndCloseMenu()">
+          Menu
+        </nav>
+      </a>
+      <div id="menuDrop" ng-show="ctrl.menuDropOpen">
+        <div class="menuButton">
+          News & Events
+        </div>
+        <div class="menuButton">
+          Special Drinks
+        </div>
+        <div class="menuButton">
+          Total Menu
+        </div>
+        <div class="menuButton">
+          Where & When
+        </div>
+        <div class="menuButton">
+          Our History
+        </div>
+        <div class="menuButton">
+          Contact Us
+        </div>
+      </div>
+      <div id="upperTitle">
+        The Hunting Horn
+      </div>
+      <img id="titleHorn" src="images/hunting-horn-2.png">
+      <div id="lowerTitle">
+        British Pub
+      </div>
+    </div>
+    <div id="churchillQuote">
+      <div id=churchillQuoteContent>
+        <div>
+          <b>"For myself, I am an optimist—it does not seem to be much use being anything else."</b>
+        </div>
+        <div>
+          <i>- Winston Churchill</i>
+        </div>
+      </div>
+    </div>
+    <div id="welcome">
+      <div class="fullIntroContent" id="names">
+        Ladies and Gentlemen,
+      </div>
+      <div class="fullIntroContent" id="introContent">
+        Welcome to The Hunting Horn! Our impeccable selection of food, drink, and fellowship will leave you unquestionably satisfied, both in body and spirit. Click on the <a href="#menu"><span ng-click="ctrl.openAndCloseMenu()">Menu</span></a> above to learn about all that we have to offer.
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div id="demo">
+      <div>
+        <u>IMPORTANT!</u>
+      </div>
+      <div>
+        THIS IS A SAMPLE WEBSITE. IT DOES <u>NOT</u> REPRESENT AN ACTUAL BUSINESS.
+      </div>
+    </div>
+    <div id="contactFooter">
+      It was designed entirely by a website developer, Nicholas Vogt. See his portfolio at <a href="www.nicholasvogt.info">www.nicholasvogt.info</a> or email him at <a href="mailto:nicholasvogt2017@gmail.com">nicholasvogt2017@gmail.com</a>.
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 700px;
+}
+
+/*BEGINING of setting when width < 450*/
+/*All of these are the default CSS settings, and are designed for mobile devices*/
+
+/*BEGIN Main title*/
+#mainTitle {
+  margin: 0;
+  border: 5px solid black;
+  border-style: groove;
+  padding: 0;
+  text-align: center;
+  color: gold;
+  background-image: url(http://corrupteddevelopment.com/wp-content/uploads/2011/10/green-pattern-grunge.jpg);
+  background-size: cover;
+}
+
+#topNav {
+  cursor: pointer;
+  margin: 0;
+  /*border: 1px solid blue;*/
+  padding: 0;
+  font-size: 5em;
+  background-color: brown;
+}
+
+#menuDrop {
+  margin: 0 5%;
+  font-size: 4em;
+  text-align: left;
+  background-color: darkred;
+  width: 90%;
+  position: absolute;
+  z-index: 1;
+}
+
+.menuButton {
+  cursor: pointer;
+  margin: 15px 5%;
+  border: 2px double gold;
+  padding: 10px 5%;
+}
+
+/*font-family: 'Cinzel', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Chivo', sans-serif;
+font-family: 'Tangerine', cursive;
+font-family: 'Alegreya SC', serif;
+font-family: 'IM Fell English', serif;
+font-family: 'Fondamento', cursive;
+font-family: 'UnifrakturMaguntia', cursive;*/
+
+#upperTitle {
+  padding: 40px 0;
+  font-family: 'IM Fell English', serif;
+  font-size: 9em;
+}
+
+#titleHorn {
+  padding: 0 10%;
+  height: auto;
+  width: 80%;
+}
+
+#lowerTitle {
+  padding: 40px 0;
+  font-family: 'IM Fell English', serif;
+  font-size: 7em;
+}
+
+#churchillQuote {
+  border-bottom: 3px solid black;
+  padding: 40px 5%;
+  text-align: center;
+  font-family: 'IM Fell English', serif;
+  font-size: 3em;
+  background-image: url(http://texturelib.com/Textures/wood/planks%20new/wood_planks_new_0001_02_preview.jpg);
+  background-size: cover;
+}
+
+#churchillQuoteContent {
+  border-radius: 20px;
+  padding: 10px 5%;
+  background-color: white;
+  box-shadow: 0 0 15px 10px white;
+  opacity: 0.9;
+}
+
+#welcome {
+  margin: 0;
+  padding: 100px 10% 50px 10%;
+  font-size: 3em;
+  /*background-size: cover;*/
+  background: url(http://www.loversiq.com/daut/as/f/b/basement-remodel-project-case-indy-brick-wet-bar-backsplash-stone-wall-stacked-fireplace-wine-storage_bar-wall-pics_home-decor_country-home-decor-pinterest-diy-cheap-online-nautical-yosemite-western-d.jpg) no-repeat center;
+  background-size: cover;
+}
+
+a {
+  cursor: pointer;
+  color: gold;
+}
+
+.fullIntroContent {
+  margin: 0;
+  padding: 20px 5% 50px 5%;
+  color: white;
+  background-color: brown;
+}
+
+#names {
+  padding-bottom: 0;
+  font-family: 'IM Fell English', serif;
+  font-size: 1.5em;
+  color: gold;
+}
+
+footer {
+  margin: 0;
+  padding: 30px 5%;
+  color: gold;
+  background-color: black;
+}
+
+#demo {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#contactFooter {
+  font-size: 2.2em;
+  line-height: 1.2;
+}
+
+/*END of setting when width < 450*/
+
+@media only screen and (min-device-width: 450px) {
+
+  #topNav {
+    font-size: 2.5em;
+  }
+
+  #menuDrop {
+    margin: 0 15%;
+    font-size: 2em;
+    text-align: left;
+    background-color: darkred;
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .menuButton {
+    cursor: pointer;
+    margin: 15px 5%;
+    border: 1px double gold;
+    padding: 10px 5% ;
+  }
+
+  #upperTitle {
+    font-size: 5em;
+  }
+
+  #titleHorn {
+    padding: 0 auto;
+    max-width: 430px;
+  }
+
+  #lowerTitle {
+    font-size: 5em;
+  }
+
+  #churchillQuote {
+    font-size: 2em;
+    padding: 40px 10%;
+  }
+
+  #welcome {
+    padding: 100px 15% 50px 15%;
+    font-size: 2em;
+  }
+
+  #demo {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  #contactFooter {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+}
