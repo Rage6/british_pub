@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
   min-width: 700px;
 }
 
@@ -10,8 +11,6 @@ body {
 /*BEGIN Main title*/
 #mainTitle {
   margin: 0;
-  border: 5px solid black;
-  border-style: groove;
   padding: 0;
   text-align: center;
   color: gold;
@@ -24,6 +23,7 @@ body {
   margin: 0;
   /*border: 1px solid blue;*/
   padding: 0;
+  font-family: 'IM Fell English', serif;
   font-size: 5em;
   background-color: brown;
 }
@@ -43,16 +43,8 @@ body {
   margin: 15px 5%;
   border: 2px double gold;
   padding: 10px 5%;
+  font-family: 'IM Fell English', serif;
 }
-
-/*font-family: 'Cinzel', serif;
-font-family: 'Cormorant Garamond', serif;
-font-family: 'Chivo', sans-serif;
-font-family: 'Tangerine', cursive;
-font-family: 'Alegreya SC', serif;
-font-family: 'IM Fell English', serif;
-font-family: 'Fondamento', cursive;
-font-family: 'UnifrakturMaguntia', cursive;*/
 
 #upperTitle {
   padding: 40px 0;
@@ -73,6 +65,7 @@ font-family: 'UnifrakturMaguntia', cursive;*/
 }
 
 #churchillQuote {
+  margin-bottom: 30px;
   border-bottom: 3px solid black;
   padding: 40px 5%;
   text-align: center;
@@ -91,7 +84,7 @@ font-family: 'UnifrakturMaguntia', cursive;*/
 }
 
 #welcome {
-  margin: 0;
+  margin-bottom: 30px;
   padding: 100px 10% 50px 10%;
   font-size: 3em;
   /*background-size: cover;*/
@@ -100,7 +93,6 @@ font-family: 'UnifrakturMaguntia', cursive;*/
 }
 
 a {
-  cursor: pointer;
   color: gold;
 }
 
@@ -116,6 +108,80 @@ a {
   font-family: 'IM Fell English', serif;
   font-size: 1.5em;
   color: gold;
+}
+
+#folderDiv {
+  border-left: 5px solid gold;
+  border-right: 5px solid gold;
+  border-radius: 50px 50px 0px 0px;
+  background-size: cover;
+  background-image: url(http://www.photos-public-domain.com/wp-content/uploads/2012/02/maroon-faux-leather-texture.jpg);
+}
+
+.folderTitle {
+  /*margin: 10px 0;*/
+  padding: 30px 0;
+  font-family: 'IM Fell English', serif;
+  font-size: 6em;
+  color: gold;
+  cursor: pointer;
+}
+
+.folderMain {
+  margin-bottom: -25px;
+  border-top: 5px solid gold;
+  border-bottom: 0;
+  border-radius: 50px 50px 0px 0px;
+  padding: 0px 5% 60px 5%;
+  color: black;
+  background-size: cover;
+  background-image: url(http://www.photos-public-domain.com/wp-content/uploads/2012/02/maroon-faux-leather-texture.jpg);
+}
+
+.folderContent {
+
+}
+
+.eventBox {
+  margin: 0 auto 50px auto;
+  padding: 30px 5%;
+  background-size: cover;
+  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Light-Parchment-Texture.jpg);
+  max-width: 1000px;
+}
+
+.eventName {
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 6em;
+}
+
+.eventImg {
+  margin: 0 auto;
+  display: block;
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.eventDate {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 4em;
+}
+
+.eventDescription {
+  font-size: 3em;
+}
+
+.closeFolder {
+  margin: 20px 30%;
+  padding: 10px 0;
+  font-size: 3em;
+  font-family: 'IM Fell English', serif;
+  color: gold;
+  text-align: center;
+  background-color: brown;
+  cursor: pointer;
 }
 
 footer {
@@ -182,6 +248,34 @@ footer {
 
   #welcome {
     padding: 100px 15% 50px 15%;
+    font-size: 2em;
+  }
+
+  #folderDiv {
+    border-left: 1px solid gold;
+    border-right: 1px solid gold;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .folderTitle {
+    padding-bottom: 0;
+    font-size: 4em;
+  }
+
+  .folderMain {
+    border-top: 1px solid gold;
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .eventName {
+    font-size: 4em;
+  }
+
+  .eventDate {
+    font-size: 3em;
+  }
+
+  .eventDescription {
     font-size: 2em;
   }
 

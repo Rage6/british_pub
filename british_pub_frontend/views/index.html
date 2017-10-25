@@ -12,28 +12,40 @@
     <div id="mainTitle">
       <a name="menu">
         <nav id="topNav" ng-click="ctrl.openAndCloseMenu()">
-          Menu
+          OPTIONS
         </nav>
       </a>
       <div id="menuDrop" ng-show="ctrl.menuDropOpen">
-        <div class="menuButton">
-          News & Events
-        </div>
-        <div class="menuButton">
-          Special Drinks
-        </div>
-        <div class="menuButton">
-          Total Menu
-        </div>
-        <div class="menuButton">
-          Where & When
-        </div>
-        <div class="menuButton">
-          Our History
-        </div>
-        <div class="menuButton">
-          Contact Us
-        </div>
+        <a href="#news" ng-click="ctrl.openAndCloseMenu(); ctrl.allFalse(); ctrl.newsBox()">
+          <div class="menuButton">
+            News & Events
+          </div>
+        </a>
+        <a href="#drinks" ng-click="ctrl.openAndCloseMenu(); ctrl.allFalse(); ctrl.drinksBox()">
+          <div class="menuButton">
+            Special Drinks
+          </div>
+        </a>
+        <a href="#totalMenu" ng-click="ctrl.openAndCloseMenu(); ctrl.allFalse(); ctrl.totalMenuBox()">
+          <div class="menuButton">
+            Total Menu
+          </div>
+        </a>
+        <a href="#where" ng-click="ctrl.openAndCloseMenu(); ctrl.allFalse(); ctrl.whereBox()">
+          <div class="menuButton">
+            Where & When
+          </div>
+        </a>
+        <a href="#history" ng-click="ctrl.openAndCloseMenu(); ctrl.allFalse(); ctrl.historyBox()">
+          <div class="menuButton">
+            Our History
+          </div>
+        </a>
+        <a href="#contacts" ng-click="ctrl.openAndCloseMenu(); ctrl.allFalse(); ctrl.contactsBox()">
+          <div class="menuButton">
+            Contact Us
+          </div>
+        </a>
       </div>
       <div id="upperTitle">
         The Hunting Horn
@@ -46,7 +58,7 @@
     <div id="churchillQuote">
       <div id=churchillQuoteContent>
         <div>
-          <b>"For myself, I am an optimist—it does not seem to be much use being anything else."</b>
+          <b>“I have taken more good from alcohol than alcohol has taken from me.”</b>
         </div>
         <div>
           <i>- Winston Churchill</i>
@@ -58,8 +70,111 @@
         Ladies and Gentlemen,
       </div>
       <div class="fullIntroContent" id="introContent">
-        Welcome to The Hunting Horn! Our impeccable selection of food, drink, and fellowship will leave you unquestionably satisfied, both in body and spirit. Click on the <a href="#menu"><span ng-click="ctrl.openAndCloseMenu()">Menu</span></a> above to learn about all that we have to offer.
+        Welcome to The Hunting Horn! Our impeccable selection of food, drink, and fellowship will leave you unquestionably satisfied, both in body and spirit. Click on the <a href="#menu"><span ng-click="ctrl.openAndCloseMenu()">Options</span></a> button above to learn about everything we have to offer and how to reach us.
       </div>
+    </div>
+    <div id="folderDiv">
+      <a name="news">
+        <div class="folderMain">
+          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.newsBox()">
+            News & Events
+          </div>
+          <div class="folderContent" ng-show="ctrl.newsDropOpen">
+            <div class="eventBox">
+              <div class="eventName">
+                Saint Andrew's Day
+              </div>
+              <img class="eventImg" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/09/14/12/willie.jpg">
+              <div class="eventDate">
+                Date: 11/3/2017
+              </div>
+              <div class="eventDescription">
+                Come and celebrate Scotland's national holiday! Kilt wearers will get 50% off their first drink, and caber tossing will begin at 5pm in the parking lot.
+              </div>
+            </div>
+            <div class="eventBox">
+              <div class="eventName">
+                Guy Fawkes Day
+              </div>
+              <img class="eventImg" src="http://www.truebibleteaching.com/images/Teaching/guy-fawkes.jpg">
+              <div class="eventDate">
+                Date: 11/5/2017
+              </div>
+              <div class="eventDescription">
+                Let's celebrate that Parliament didn't get blown up ... by drinking! The bonfire begins at 7pm, at which point gin & tonics will be 50% off!
+              </div>
+            </div>
+            <div class="closeFolder" ng-click="ctrl.newsDropOpen = false">
+              DONE
+            </div>
+          </div>
+        </div>
+      </a>
+      <a name="drinks">
+        <div class="folderMain">
+          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.drinksBox()">
+            Special Drinks
+          </div>
+          <div class="folderContent" ng-show="ctrl.drinksDropOpen">
+            Testing
+            <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
+              DONE
+            </div>
+          </div>
+        </div>
+      </a>
+      <a name="totalMenu">
+        <div class="folderMain">
+          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.totalMenuBox()">
+            Total Menu
+          </div>
+          <div class="folderContent" ng-show="ctrl.totalMenuDropOpen">
+            Testing
+            <div class="closeFolder" ng-click="ctrl.totalMenuDropOpen = false">
+              DONE
+            </div>
+          </div>
+        </div>
+      </a>
+      <a name="where">
+        <div class="folderMain">
+          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.whereBox()">
+            Where & When
+          </div>
+          <div class="folderContent" ng-show="ctrl.whereDropOpen">
+            Testing
+            <div class="closeFolder" ng-click="ctrl.whereDropOpen = false">
+              DONE
+            </div>
+          </div>
+        </div>
+      </a>
+      <a name="history">
+        <div class="folderMain">
+          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.historyBox()">
+            Our History
+          </div>
+          <div class="folderContent" ng-show="ctrl.historyDropOpen">
+            Testing
+            <div class="closeFolder" ng-click="ctrl.historyDropOpen = false">
+              DONE
+            </div>
+          </div>
+        </div>
+      </a>
+      <a name="contacts">
+        <div class="folderMain">
+          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.contactsBox()">
+            Contact Us
+          </div>
+          <div class="folderContent" ng-show="ctrl.contactsDropOpen">
+            Testing
+            <div class="closeFolder" ng-click="ctrl.contactsDropOpen = false">
+              DONE
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
   </body>
   <footer>
