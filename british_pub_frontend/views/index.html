@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- location: ~/websites/personal/practice_sites/british_pub/british_pub_frontend -->
+<!-- Churchill pic: ~/Downloads/churchill.png -->
 <html ng-app="british_pub">
   <head>
     <meta charset="utf-8">
@@ -57,6 +59,7 @@
     </div>
     <div id="churchillQuote">
       <div id=churchillQuoteContent>
+        <img id="churchillPic" src="/images/churchill-2.jpg">
         <div>
           <b>“I have taken more good from alcohol than alcohol has taken from me.”</b>
         </div>
@@ -80,7 +83,27 @@
             News & Events
           </div>
           <div class="folderContent" ng-show="ctrl.newsDropOpen">
-            <div class="eventBox">
+            <!-- <div class="itemBox">
+              <div class="eventName">
+                EVENT TITLE
+              </div>
+              <img class="eventImg" src="URL HERE">
+              <div class="eventDate">
+                Date: DATE HERE
+              </div>
+              <div class="eventDescription">
+                EVENT DESCRIPTION
+              </div>
+              <div class="closeBox">
+                <div class="doneFolder">
+                  Done looking for an event?
+                </div>
+                <div class="closeFolder" ng-click="ctrl.newsDropOpen = false">
+                  Click Here
+                </div>
+              </div>
+            </div> -->
+            <div class="itemBox">
               <div class="eventName">
                 Saint Andrew's Day
               </div>
@@ -91,8 +114,16 @@
               <div class="eventDescription">
                 Come and celebrate Scotland's national holiday! Kilt wearers will get 50% off their first drink, and caber tossing will begin at 5pm in the parking lot.
               </div>
+              <div class="closeBox">
+                <div class="doneFolder">
+                  Done looking for an event?
+                </div>
+                <div class="closeFolder" ng-click="ctrl.newsDropOpen = false">
+                  Click Here
+                </div>
+              </div>
             </div>
-            <div class="eventBox">
+            <div class="itemBox">
               <div class="eventName">
                 Guy Fawkes Day
               </div>
@@ -103,10 +134,16 @@
               <div class="eventDescription">
                 Let's celebrate that Parliament didn't get blown up ... by drinking! The bonfire begins at 7pm, at which point gin & tonics will be 50% off!
               </div>
+              <div class="closeBox">
+                <div class="doneFolder">
+                  Done looking for an event?
+                </div>
+                <div class="closeFolder" ng-click="ctrl.newsDropOpen = false">
+                  Click Here
+                </div>
+              </div>
             </div>
-            <div class="closeFolder" ng-click="ctrl.newsDropOpen = false">
-              DONE
-            </div>
+            <!-- Insert Next Event Here -->
           </div>
         </div>
       </a>
@@ -116,10 +153,87 @@
             Special Drinks
           </div>
           <div class="folderContent" ng-show="ctrl.drinksDropOpen">
-            Testing
-            <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
-              DONE
+            <!-- <div class="itemBox">
+              <img class="drinksImg" src="URL HERE">
+              <div class="drinksTitle">
+                <u>TITLE HERE</u>
+              </div>
+              <div class="drinksDescription">
+                DESCRIPTION HERE
+              </div>
+              <div class="drinksCost">
+                PRICE HERE
+              </div>
+              <div class="closeBox">
+                <div class="doneFolder">
+                  Done looking for a drink?
+                </div>
+                <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
+                  Click Here
+                </div>
+              </div>
+            </div> -->
+            <div class="itemBox">
+              <img class="drinksImg" src="https://imagesvc.timeincapp.com/v3/mm/image?url=http%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2FHD-2010-r-cocktail-sidecar.jpg&w=1800&q=70">
+              <div class="drinksTitle">
+                <u>Sidecar</u>
+              </div>
+              <div class="drinksDescription">
+                Thought to have been invented around World War I in London, the Sidecar is traditionally made with cognac, orange liqueur and lemon juice.
+              </div>
+              <div class="drinksCost">
+                $6
+              </div>
+              <div class="closeBox">
+                <div class="doneFolder">
+                  Done looking for a drinks?
+                </div>
+                <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
+                  Click Here
+                </div>
+              </div>
             </div>
+            <div class="itemBox">
+              <img class="drinksImg" src="https://imagesvc.timeincapp.com/v3/mm/image?url=http%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2FHD-201006-a-notes-brew-oyster-beer.jpg&w=1800&q=70">
+              <div class="drinksTitle">
+                <u>Bivalve Brews</u>
+              </div>
+              <div class="drinksDescription">
+                Traditional British oyster stout is, in fact, brewed with fresh oysters, but the beer is minerally, not fishy.
+              </div>
+              <div class="drinksCost">
+                $5
+              </div>
+              <div class="closeBox">
+                <div class="doneFolder">
+                  Done looking for a drink?
+                </div>
+                <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
+                  Click Here
+                </div>
+              </div>
+            </div>
+            <div class="itemBox">
+              <img class="drinksImg" src="https://imagesvc.timeincapp.com/v3/mm/image?url=http%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2FHD-2009-c-pimms-iced-tea.jpg&w=1800&q=70">
+              <div class="drinksTitle">
+                <u>Pimm's Iced Tea</u>
+              </div>
+              <div class="drinksDescription">
+                Pimm's No. 1, a gin-based aperitif invented by London bar owner James Pimm in 1823, is the quintessential English summer-afternoon drink (and the traditional drink of Wimbledon). Here, it is combined with tea, another beloved British beverage.
+              </div>
+              <div class="drinksCost">
+                $7
+              </div>
+              <div class="closeBox">
+                <div class="doneFolder">
+                  Done looking for a drink?
+                </div>
+                <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
+                  Click Here
+                </div>
+              </div>
+            </div>
+            <!-- Insert Next Drink Here -->
           </div>
         </div>
       </a>
