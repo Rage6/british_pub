@@ -116,7 +116,7 @@
               </div>
               <div class="closeBox">
                 <div class="doneFolder">
-                  Done looking for an event?
+                  Done looking?
                 </div>
                 <div class="closeFolder" ng-click="ctrl.newsDropOpen = false">
                   Click Here
@@ -136,7 +136,7 @@
               </div>
               <div class="closeBox">
                 <div class="doneFolder">
-                  Done looking for an event?
+                  Done looking?
                 </div>
                 <div class="closeFolder" ng-click="ctrl.newsDropOpen = false">
                   Click Here
@@ -186,7 +186,7 @@
               </div>
               <div class="closeBox">
                 <div class="doneFolder">
-                  Done looking for a drinks?
+                  Done looking?
                 </div>
                 <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
                   Click Here
@@ -206,7 +206,7 @@
               </div>
               <div class="closeBox">
                 <div class="doneFolder">
-                  Done looking for a drink?
+                  Done looking?
                 </div>
                 <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
                   Click Here
@@ -226,7 +226,7 @@
               </div>
               <div class="closeBox">
                 <div class="doneFolder">
-                  Done looking for a drink?
+                  Done looking?
                 </div>
                 <div class="closeFolder" ng-click="ctrl.drinksDropOpen = false">
                   Click Here
@@ -242,10 +242,149 @@
           <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.totalMenuBox()">
             Total Menu
           </div>
-          <div class="folderContent" ng-show="ctrl.totalMenuDropOpen">
-            Testing
-            <div class="closeFolder" ng-click="ctrl.totalMenuDropOpen = false">
-              DONE
+          <div class="folderContent; delayWrap" ng-show="ctrl.totalMenuDropOpen">
+            <!-- BEGIN the "Starters and Pies" category -->
+            <div class="oneCategory">
+              <div class="foodCategory" ng-click="ctrl.openStarter()">
+                <i>Starters & Pies</i>
+              </div>
+              <div class="menuWrap" ng-show="ctrl.starterCategoryDrop">
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Sausage Roll</u>
+                  </div>
+                  <img class="totalMenuImg" src="https://ichef.bbci.co.uk/food/ic/food_16x9_448/recipes/totally_lazy_mini_98499_16x9.jpg">
+                  <div class="totalMenuDescription">
+                    Spiced sausage wrapped in a flaky crust. This British savoury pastry snack, popular in Commonwealth nations and beyond.
+                  </div>
+                  <div class="totalMenuCost">
+                    $6
+                  </div>
+                </div>
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Scotch Egg</u>
+                  </div>
+                  <img class="totalMenuImg" src="http://i.telegraph.co.uk/multimedia/archive/02680/scotch_2680503b.jpg">
+                  <div class="totalMenuDescription">
+                    A hard boiled egg wrapped in spiced sausage, served with mustard sauce.
+                  </div>
+                  <div class="totalMenuCost">
+                    $6
+                  </div>
+                </div>
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Cottage Pie</u>
+                  </div>
+                  <img class="totalMenuImg" src="http://goodtoknow.media.ipcdigital.co.uk/111/0000029a2/3b84_orh412w625/Cottage-pie-cropped.jpg">
+                  <div class="totalMenuDescription">
+                    Minced Beef and vegetables topped with our mashed potatoes & gravy.
+                  </div>
+                  <div class="totalMenuCost">
+                    $12
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END the "Starters and Pies" category -->
+            <!-- BEGIN the "Favorites & Sandwiches" category -->
+            <div class="oneCategory">
+              <div class="foodCategory" ng-click="ctrl.openFavorite()">
+                <i>Favorites & Sandwiches</i>
+              </div>
+              <div class="menuWrap" ng-show="ctrl.favoriteCategoryDrop">
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Bangers & Mash</u>
+                  </div>
+                  <img class="totalMenuImg" src="https://static.thespicehouse.com/images/image/4586/large_Bangers-and-mash.jpg">
+                  <div class="totalMenuDescription">
+                    English style sausages & homemade mash potatoes, served with English Heinz baked beans
+                  </div>
+                  <div class="totalMenuCost">
+                    $11
+                  </div>
+                </div>
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Authentic English Fish & Chips</u>
+                  </div>
+                  <img class="totalMenuImg" src="http://www.delonghi.com/Global/recipes/multifry/173.jpg">
+                  <div class="totalMenuDescription">
+                    Known as the best fish & chips in town, they include one-half pound of beer battered Icelandic cod, fries and peas.
+                  </div>
+                  <div class="totalMenuCost">
+                    $14
+                  </div>
+                </div>
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Lamb Stew in a Yorkshire Pudding</u>
+                  </div>
+                  <img class="totalMenuImg" src="https://easyteas.files.wordpress.com/2010/05/giant-yorkshire.jpg">
+                  <div class="totalMenuDescription">
+                    Chunks of beef , potato, & vegetables in hearty stew made with Guiness stout in a giant Yorkshire Pudding.
+                  </div>
+                  <div class="totalMenuCost">
+                    $14
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END the "Favorites & Sandwiches" category -->
+            <!-- BEGIN the "Desserts" -->
+            <div class="oneCategory">
+              <div class="foodCategory" ng-click="ctrl.openDessertOpen()">
+                <i>Desserts</i>
+              </div>
+              <div class="menuWrap" ng-show="ctrl.dessertCategoryDrop">
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Bangers & Mash</u>
+                  </div>
+                  <img class="totalMenuImg" src="https://static.thespicehouse.com/images/image/4586/large_Bangers-and-mash.jpg">
+                  <div class="totalMenuDescription">
+                    English style sausages & homemade mash potatoes, served with English Heinz baked beans
+                  </div>
+                  <div class="totalMenuCost">
+                    $11
+                  </div>
+                </div>
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Authentic English Fish & Chips</u>
+                  </div>
+                  <img class="totalMenuImg" src="http://www.delonghi.com/Global/recipes/multifry/173.jpg">
+                  <div class="totalMenuDescription">
+                    Known as the best fish & chips in town, they include one-half pound of beer battered Icelandic cod, fries and peas.
+                  </div>
+                  <div class="totalMenuCost">
+                    $14
+                  </div>
+                </div>
+                <div class="itemBox noItemBkgrd">
+                  <div class="totalMenuTitle">
+                    <u>Lamb Stew in a Yorkshire Pudding</u>
+                  </div>
+                  <img class="totalMenuImg" src="https://easyteas.files.wordpress.com/2010/05/giant-yorkshire.jpg">
+                  <div class="totalMenuDescription">
+                    Chunks of beef , potato, & vegetables in hearty stew made with Guiness stout in a giant Yorkshire Pudding.
+                  </div>
+                  <div class="totalMenuCost">
+                    $14
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END the dessert category -->
+            <div class="closeBox">
+              <div class="doneFolder">
+                Done looking?
+              </div>
+              <div class="closeFolder" ng-click="ctrl.totalMenuDropOpen = false">
+                Click Here
+              </div>
             </div>
           </div>
         </div>
@@ -258,19 +397,6 @@
           <div class="folderContent" ng-show="ctrl.whereDropOpen">
             Testing
             <div class="closeFolder" ng-click="ctrl.whereDropOpen = false">
-              DONE
-            </div>
-          </div>
-        </div>
-      </a>
-      <a name="history">
-        <div class="folderMain">
-          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.historyBox()">
-            Our History
-          </div>
-          <div class="folderContent" ng-show="ctrl.historyDropOpen">
-            Testing
-            <div class="closeFolder" ng-click="ctrl.historyDropOpen = false">
               DONE
             </div>
           </div>
