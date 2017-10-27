@@ -226,6 +226,10 @@ a {
   border: 3px solid black;
   text-align: center;
   font-size: 6em;
+  font-family: 'IM Fell English', serif;
+  color: gold;
+  background-color: brown;
+  cursor: pointer;
 }
 
 .delayWrap {
