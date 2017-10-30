@@ -79,7 +79,7 @@
     <div id="folderDiv">
       <a name="news">
         <div class="folderMain">
-          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.newsBox()">
+          <div class="folderTitle" ng-click="ctrl.newsBox()">
             News & Events
           </div>
           <div class="folderContent" ng-show="ctrl.newsDropOpen">
@@ -149,8 +149,8 @@
       </a>
       <a name="drinks">
         <div class="folderMain">
-          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.drinksBox()">
-            Special Drinks
+          <div class="folderTitle" ng-click="ctrl.drinksBox()">
+            Drinks
           </div>
           <div class="folderContent" ng-show="ctrl.drinksDropOpen">
             <!-- <div class="itemBox">
@@ -239,7 +239,7 @@
       </a>
       <a name="totalMenu">
         <div class="folderMain">
-          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.totalMenuBox()">
+          <div class="folderTitle" ng-click="ctrl.totalMenuBox()">
             Total Menu
           </div>
           <div class="folderContent; delayWrap" ng-show="ctrl.totalMenuDropOpen">
@@ -391,11 +391,64 @@
       </a>
       <a name="where">
         <div class="folderMain">
-          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.whereBox()">
+          <div class="folderTitle" ng-click="ctrl.whereBox()">
             Where & When
           </div>
-          <div class="folderContent" ng-show="ctrl.whereDropOpen">
-            Testing
+          <div class="folderBox" id="whereChange" ng-show="ctrl.whereDropOpen">
+            <div id="wholeWhereBox">
+              <div class="oneWhereBox">
+                <div class="whereTitle">
+                  Where
+                </div>
+                <div id="addressBox">
+                  The Hunting Horn can be found at the corner of Unreal Street and Fake Avenue, which is 5 minutes off of exit 101 on the Invisible Freeway. Our exact address is:
+                  <div id="address">
+                    <div>The Hungting Horn</div>
+                    <div>London SW1A 1AA</div>
+                  </div>
+                </div>
+              </div>
+              <div class="oneWhereBox">
+                <div class="whereTitle">
+                  When
+                </div>
+                <div id="timeBox">
+                  <table class="timeCells" id="timeTable">
+                    <tr>
+                      <td class="timeCells">Sunday</td>
+                      <td class="timeCells">1pm - 8pm</td>
+                    </tr>
+                    <tr>
+                      <td class="timeCells">Monday</td>
+                      <td class="timeCells">11am - 11pm</td>
+                    </tr>
+                    <tr>
+                      <td class="timeCells">Tuesday</td>
+                      <td class="timeCells">11am -11pm</td>
+                    </tr>
+                    <tr>
+                      <td class="timeCells">Wednesday</td>
+                      <td class="timeCells">11am - 11pm</td>
+                    </tr>
+                    <tr>
+                      <td class="timeCells">Thursday</td>
+                      <td class="timeCells">11am - 11pm</td>
+                    </tr>
+                    <tr>
+                      <td class="timeCells">Friday</td>
+                      <td class="timeCells">11am - 3am</td>
+                    </tr>
+                    <tr>
+                      <td class="timeCells">Saturday</td>
+                      <td class="timeCells">11am - 3am</td>
+                    </tr>
+                  </table>
+                  <i>
+                    NOTE: Any exceptions, such as holidays and special events, will be announced within the "News & Events" tab.
+                  </i>
+                </div>
+              </div>
+            </div>
             <div class="closeFolder" ng-click="ctrl.whereDropOpen = false">
               DONE
             </div>
@@ -404,7 +457,7 @@
       </a>
       <a name="contacts">
         <div class="folderMain">
-          <div class="folderTitle" ng-click="ctrl.allFalse(); ctrl.contactsBox()">
+          <div class="folderTitle" ng-click="ctrl.contactsBox()">
             Contact Us
           </div>
           <div class="folderContent" ng-show="ctrl.contactsDropOpen">
