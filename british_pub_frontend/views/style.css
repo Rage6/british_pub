@@ -235,7 +235,7 @@ a {
 .delayWrap {
   padding: 30px 5%;
   display: block;
-  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Light-Parchment-Texture.jpg);;
+  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Light-Parchment-Texture.jpg);
 }
 
 .noItemBkgrd {
@@ -274,6 +274,63 @@ a {
   background-color: brown;
 }
 /*END Food Menu*/
+
+/*BEGIN Where & When*/
+#whereChange {
+  padding: 40px 10%;
+  display: block;
+  background-size: cover;
+  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Light-Parchment-Texture.jpg);
+}
+
+.whereTitle {
+  text-align: center;
+  font-size: 1.5em;
+  color: gold;
+  padding: 10px 10%;
+  background-color: brown;
+}
+
+#contactBox {
+  margin-bottom: 50px;
+  /*border: 1px solid red;*/
+  font-size: 2em;
+}
+
+#addressBox {
+  margin-bottom: 60px;
+  border: 2px solid brown;
+  padding: 30px 5%;
+}
+
+#timeBox {
+  margin-bottom: 30px;
+  border: 2px solid brown;
+  padding: 30px 5%;
+}
+
+#address {
+  margin-top: 40px;
+  padding: 40px 0;
+  text-align: center;
+  font-family: courier;
+  color: white;
+  background-color: black;
+}
+
+#timeTable {
+  margin: 30px 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.timeCells {
+  border: black solid 2px;
+  padding: 10px 5%;
+  font-size: 1.2em;
+}
+
+/*END Where & When*/
 
 /*BEGIN How To Close A Tab*/
 .closeBox {
