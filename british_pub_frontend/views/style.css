@@ -291,20 +291,17 @@ a {
   background-color: brown;
 }
 
-#contactBox {
+#wholeWhereBox {
   margin-bottom: 50px;
-  /*border: 1px solid red;*/
   font-size: 2em;
+}
+
+.oneWhereBox {
+
 }
 
 #addressBox {
   margin-bottom: 60px;
-  border: 2px solid brown;
-  padding: 30px 5%;
-}
-
-#timeBox {
-  margin-bottom: 30px;
   border: 2px solid brown;
   padding: 30px 5%;
 }
@@ -314,8 +311,15 @@ a {
   padding: 40px 0;
   text-align: center;
   font-family: courier;
-  color: white;
-  background-color: black;
+  color: gold;
+  background-size: cover;
+  background-image: url(http://corrupteddevelopment.com/wp-content/uploads/2011/10/green-pattern-grunge.jpg);
+}
+
+#timeBox {
+  margin-bottom: 30px;
+  border: 2px solid brown;
+  padding: 30px 5%;
 }
 
 #timeTable {
@@ -506,6 +510,34 @@ footer {
 
   .totalMenuDescription {
     font-size: 1.7em;
+  }
+
+  #wholeWhereBox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .oneWhereBox {
+    display: block;
+    width: 45%;
+  }
+
+  #timeBox {
+    margin-bottom: 30px;
+    border: 2px solid brown;
+    padding: 30px 5%;
+  }
+
+  #timeTable {
+    margin: 30px 0;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .timeCells {
+    border: black solid 2px;
+    padding: 10px 5%;
+    font-size: 0.7em;
   }
 
   /*BEGIN How To Close A Tab*/
