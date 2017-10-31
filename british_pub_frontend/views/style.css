@@ -46,6 +46,10 @@ body {
   font-family: 'IM Fell English', serif;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 #upperTitle {
   padding: 40px 0;
   font-family: 'IM Fell English', serif;
