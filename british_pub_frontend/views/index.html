@@ -105,6 +105,7 @@
               </div>
             </div> -->
             <div class="itemBox">
+              <img class="boxTack" src="http://static1.1.sqspcdn.com/static/f/460557/23039370/1372863682080/tack.jpg?token=OB9DOumVU5INsxI89%2Fe77aPaVt0%3D">
               <div class="eventName">
                 Saint Andrew's Day
               </div>
@@ -125,6 +126,7 @@
               </div>
             </div>
             <div class="itemBox">
+              <img class="boxTack" src="http://static1.1.sqspcdn.com/static/f/460557/23039370/1372863682080/tack.jpg?token=OB9DOumVU5INsxI89%2Fe77aPaVt0%3D">
               <div class="eventName">
                 Guy Fawkes Day
               </div>
@@ -462,9 +464,37 @@
             Contact Us
           </div>
           <div class="folderContent" ng-show="ctrl.contactsDropOpen">
-            Testing
-            <div class="closeFolder" ng-click="ctrl.contactsDropOpen = false">
-              DONE
+            <div class="itemBox" id="itemContactBox">
+              <div id="contactsContent">
+                <a href="tel:555-555-5555">
+                  <div class="contactTypeBox">
+                    <div class="contactsTopic">
+                      <u>By Phone:</u>
+                    </div>
+                    555-555-5555
+                  </div>
+                </a>
+                <a href="mailto:notanActualPub@email.com">
+                  <div class="contactTypeBox">
+                    <div class="contactsTopic">
+                      <u>By Email:</u>
+                    </div>
+                    <div id="emailSize">
+                      notAnActualPub@email.com
+                    </div>
+                  </div>
+                </a>
+                <div class="contactTypeBox">
+                  <div class="contactsTopic">
+                    <u>By Mail:</u>
+                  </div>
+                  The Hunting Horn</br>
+                  London SW1A 1AA</br>
+                </div>
+              </div>
+              <div class="closeFolder" ng-click="ctrl.contactsDropOpen = false">
+                DONE
+              </div>
             </div>
           </div>
         </div>
@@ -481,7 +511,7 @@
       </div>
     </div>
     <div id="contactFooter">
-      It was designed entirely by a website developer, Nicholas Vogt. See his portfolio at <a href="www.nicholasvogt.info">www.nicholasvogt.info</a> or email him at <a href="mailto:nicholasvogt2017@gmail.com">nicholasvogt2017@gmail.com</a>.
+      It was designed entirely by a website developer, Nicholas Vogt. See his portfolio at <u><a href="www.nicholasvogt.info">www.nicholasvogt.info</a></u> or email him at <u><a href="mailto:nicholas.vogt2017@gmail.com">nicholas.vogt2017@gmail.com</a></u>.
     </div>
   </footer>
 </html>
