@@ -164,8 +164,8 @@ a {
 }
 
 .boxTack {
-  margin: 0 45% 20px 45%;
-  width: 10%;
+  margin: 0 40% 0 40%;
+  width: 20%;
 }
 /*END All folders*/
 
@@ -366,11 +366,17 @@ a {
 }
 
 #emailSize {
-  font-size: 0.8em;
+  font-size: 5vw;
+}
+
+.addressLine {
+  font-size: 5vw;
 }
 
 #itemContactBox {
-  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
 }
 /*END "Contact Us"*/
 
