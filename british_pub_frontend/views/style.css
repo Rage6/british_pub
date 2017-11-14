@@ -125,7 +125,6 @@ a {
   border-right: 5px solid gold;
   border-radius: 50px 50px 0px 0px;
   background-size: cover;
-  /*background-image: url(/images/leather_menu.jpg);*/
 }
 
 .folderTitle {
@@ -144,8 +143,9 @@ a {
   border-radius: 50px 50px 0px 0px;
   padding: 0px 5% 60px 5%;
   color: black;
-  background-size: cover;
+  background-size: 100%;
   background-image: url(/images/leather_menu.jpg);
+  background-repeat: repeat-y;
 }
 
 .folderContent {
@@ -160,7 +160,6 @@ a {
   padding: 30px 10%;
   background-size: cover;
   background-image: url(/images/parchment.jpg);
-  /*max-width: 300px;*/
 }
 
 .boxTack {
