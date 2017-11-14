@@ -14,7 +14,7 @@ body {
   padding: 0;
   text-align: center;
   color: gold;
-  background-image: url(http://corrupteddevelopment.com/wp-content/uploads/2011/10/green-pattern-grunge.jpg);
+  background-image: url(/images/green-wall.jpg);
   background-size: cover;
 }
 
@@ -79,7 +79,7 @@ a:link {
   text-align: center;
   font-family: 'IM Fell English', serif;
   font-size: 3em;
-  background-image: url(http://texturelib.com/Textures/wood/planks%20new/wood_planks_new_0001_02_preview.jpg);
+  background-image: url(/images/wood_planks.jpg);
   background-size: cover;
 }
 
@@ -125,7 +125,6 @@ a {
   border-right: 5px solid gold;
   border-radius: 50px 50px 0px 0px;
   background-size: cover;
-  background-image: url(http://www.photos-public-domain.com/wp-content/uploads/2012/02/maroon-faux-leather-texture.jpg);
 }
 
 .folderTitle {
@@ -144,8 +143,9 @@ a {
   border-radius: 50px 50px 0px 0px;
   padding: 0px 5% 60px 5%;
   color: black;
-  background-size: cover;
-  background-image: url(http://www.photos-public-domain.com/wp-content/uploads/2012/02/maroon-faux-leather-texture.jpg);
+  background-size: 100%;
+  background-image: url(/images/leather_menu.jpg);
+  background-repeat: repeat-y;
 }
 
 .folderContent {
@@ -159,13 +159,12 @@ a {
   margin: 0 auto 100px auto;
   padding: 30px 10%;
   background-size: cover;
-  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Light-Parchment-Texture.jpg);
-  /*max-width: 300px;*/
+  background-image: url(/images/parchment.jpg);
 }
 
 .boxTack {
-  margin: 0 45% 20px 45%;
-  width: 10%;
+  margin: 0 40% 0 40%;
+  width: 20%;
 }
 /*END All folders*/
 
@@ -244,7 +243,7 @@ a {
 .delayWrap {
   padding: 30px 5%;
   display: block;
-  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Light-Parchment-Texture.jpg);
+  background-image: url(/images/parchment.jpg);
 }
 
 .noItemBkgrd {
@@ -289,7 +288,7 @@ a {
   padding: 40px 10%;
   display: block;
   background-size: cover;
-  background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Light-Parchment-Texture.jpg);
+  background-image: url(/images/parchment.jpg);
 }
 
 .whereTitle {
@@ -322,8 +321,12 @@ a {
   font-family: courier;
   color: gold;
   background-size: cover;
-  background-image: url(http://corrupteddevelopment.com/wp-content/uploads/2011/10/green-pattern-grunge.jpg);
+  background-image: url(/images/green-wall.jpg);
 }
+
+ .whereAddress {
+   font-size: 2.5vw;
+ }
 
 #timeBox {
   margin-bottom: 30px;
@@ -366,11 +369,17 @@ a {
 }
 
 #emailSize {
-  font-size: 0.8em;
+  font-size: 5vw;
+}
+
+.addressLine {
+  font-size: 5vw;
 }
 
 #itemContactBox {
-  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
 }
 /*END "Contact Us"*/
 
